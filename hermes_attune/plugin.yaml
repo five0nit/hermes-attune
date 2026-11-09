@@ -1,0 +1,19 @@
+name: attune
+version: 0.3.1
+requires_hermes: ">=0.22.5"
+description: Daily learning that drives evidence-linked, permission-bound project build previews.
+author: Michael Costea
+provides_tools:
+  - attune_goal
+  - attune_checkin
+  - attune_answer
+  - attune_work
+  - attune_deliver
+  - attune_status
+  - attune_projects
+  - attune_project
+  - attune_propose
+  - attune_build
+  - attune_build_result
+provides_hooks:
+  - pre_llm_call

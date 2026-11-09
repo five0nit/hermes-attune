@@ -1,0 +1,7 @@
+include __init__.py plugin.yaml LICENSE .gitignore
+recursive-include hermes_attune *.yaml *.md
+recursive-include docs *.md *.in
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include .github *.yml
+global-exclude *.pyc *.pyo

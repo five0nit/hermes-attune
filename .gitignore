@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+*.db
+*.db-*
+artifacts/local-demo/
+artifacts/demo*/
+artifacts/verification/*
+artifacts/submission/
+.env
+.env.*
+*.sqlite
+*.sqlite-*

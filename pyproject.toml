@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-attune"
+version = "0.3.1"
+description = "Daily learning that drives evidence-linked, permission-bound project build previews"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Michael Costea"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "jsonschema>=4,<5"]
+
+[project.scripts]
+hermes-attune = "hermes_attune.cli:main"
+
+[project.entry-points."hermes_agent.plugins"]
+attune = "hermes_attune"
+
+[tool.setuptools.packages.find]
+include = ["hermes_attune*"]
+
+[tool.setuptools.package-data]
+hermes_attune = ["plugin.yaml", "skills/*/SKILL.md"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
